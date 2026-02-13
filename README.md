@@ -14,6 +14,12 @@ Technologies Used:
   NumPy
 
 
+Face Detection Initialization:
+
+     mpFaceDetection = mp.solutions.face_detection
+     faceDetection = mpFaceDetection.FaceDetection()
+
+
 How It Works:
 
    Webcam captures real-time video.
@@ -29,5 +35,11 @@ How It Works:
      Confidence score is displayed
 
      FPS is calculated and shown on screen.
+
+Install dependencies:
+             
+      pip install opencv-python mediapipe numpy
+
+
 
   
