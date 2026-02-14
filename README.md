@@ -60,7 +60,7 @@ Technologies used:
 How it works:
 
 
-Capture webcam video using cv2.VideoCapture(0)
+Capture webcam video using cv2.VideoCapture()
 
 Convert frame to grayscale
 
@@ -73,4 +73,8 @@ Apply cv2.GaussianBlur() to the face
 Replace blurred ROI back into original frame
 
 Display processed frame
+
+
+
+
   
