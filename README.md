@@ -79,4 +79,10 @@ Output:
 ![Face blur Output](faceblur.png)
 
 
+
+3. Real time face detection using Opencv's Haarcascade
+
+   This project implements a real-time face detection system using OpenCV’s pre-trained Haar Cascade classifier. The system captures live video from the webcam, detects human faces in each frame, and draws bounding boxes around them.
+
+   
   
