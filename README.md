@@ -84,5 +84,25 @@ Output:
 
    This project implements a real-time face detection system using OpenCV’s pre-trained Haar Cascade classifier. The system captures live video from the webcam, detects human faces in each frame, and draws bounding boxes around them.
 
-   
-  
+
+Technologies used:
+
+      Python
+      OpenCV
+      Haar Cascade Classifier
+
+How it works:
+
+   i.Load Haar Cascade Classifier
+     The program loads OpenCV’s pre-trained haarcascade_frontalface_default.xml model for detecting frontal faces.
+
+   ii.Initialize Webcam
+      The webcam is accessed using cv2.VideoCapture(0) to capture live video frames.
+
+   iii.Frame Processing
+       Each frame is converted to grayscale.
+
+   iv.The Haar Cascade classifier detects faces in the grayscale image.
+       For every detected face, a blue rectangle is drawn around it.
+
+
