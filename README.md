@@ -106,3 +106,36 @@ How it works:
        For every detected face, a blue rectangle is drawn around it.
 
 
+
+4.Real-Time Pencil Sketch Using OpenCV
+
+This project converts live webcam video into a real-time pencil sketch effect using OpenCV.
+
+
+It displays:
+   Original camera feed
+
+   Pencil sketch version
+
+   Both shown side-by-side in one window
+
+Technologies used:
+       
+     Python3
+     OpenCV
+     NumPy
+
+How it works:
+
+  Convert frame to grayscale
+
+  Invert grayscale image
+
+  Apply Gaussian Blur
+
+  Blend using Dodge technique
+
+
+Output
+
+![livesketch Output](livesketch.png)
