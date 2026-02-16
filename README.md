@@ -74,7 +74,9 @@ Replace blurred ROI back into original frame
 
 Display processed frame
 
+Output:
 
+![Face blur Output](faceblur.png)
 
 
   
