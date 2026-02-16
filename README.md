@@ -76,7 +76,7 @@ Display processed frame
 
 Output:
 
-![Face blur Output](faceblur.png)
+![Face blur Output](output/faceblur.png)
 
 
 
@@ -140,4 +140,4 @@ How it works:
 
 Output
 
-![livesketch Output](livesketch.png)
+![livesketch Output](output/livesketch.png)
