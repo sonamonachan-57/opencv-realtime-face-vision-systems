@@ -141,3 +141,45 @@ How it works:
 Output
 
 ![livesketch Output](output/livesketch.png)
+
+5. Real time facial landmark detection using dlib and opencv
+
+    A real-time Facial Landmark Detection system built using Dlib and OpenCV.
+   This project detects faces from webcam input and plots 68 facial landmark points (eyes, nose, mouth, jawline, etc.) on the    detected face.
+
+Features:
+
+   Real-time webcam face detection
+
+   68 facial landmark detection
+
+   Landmark visualization with OpenCV
+
+   Fast and lightweight implementation
+
+   Clean and simple code structure
+
+Technologies used:
+      
+      Python 3.x
+      OpenCV
+      Dlib
+      NumPy
+
+Model Used:
+    This project uses:
+
+     Dlib's Frontal Face Detector
+     shape_predictor_68_face_landmarks.dat model (pre-trained)
+
+Install dependencies:
+      
+       pip install opencv-python
+       pip install dlib
+       pip install numpy
+
+Output:
+
+ ![face_landmark Output](output/facelandmark.png)
+
+
