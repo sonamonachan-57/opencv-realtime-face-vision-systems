@@ -97,7 +97,7 @@ How it works:
      The program loads OpenCV’s pre-trained haarcascade_frontalface_default.xml model for detecting frontal faces.
 
    ii.Initialize Webcam
-      The webcam is accessed using cv2.VideoCapture(0) to capture live video frames.
+      The webcam is accessed using cv2.VideoCapture() to capture live video frames.
 
    iii.Frame Processing
        Each frame is converted to grayscale.
