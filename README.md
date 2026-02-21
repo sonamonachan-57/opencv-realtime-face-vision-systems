@@ -42,7 +42,7 @@ Install dependencies:
 
 
 
-2. Real Time face blur using opencv:
+# 2. Real Time face blur using opencv:
 
     This project detects human faces in real-time using OpenCV’s Haar Cascade classifier and applies a Gaussian blur effect to anonymize them.
 
@@ -80,7 +80,7 @@ Output:
 
 
 
-3. Real time face detection using Opencv's Haarcascade
+# 3. Real time face detection using Opencv's Haarcascade
 
    This project implements a real-time face detection system using OpenCV’s pre-trained Haar Cascade classifier. The system captures live video from the webcam, detects human faces in each frame, and draws bounding boxes around them.
 
@@ -109,7 +109,7 @@ How it works:
 
 
 
-4.Real-Time Pencil Sketch Using OpenCV
+# 4.Real-Time Pencil Sketch Using OpenCV
 
 This project converts live webcam video into a real-time pencil sketch effect using OpenCV.
 
@@ -142,7 +142,7 @@ Output
 
 ![livesketch Output](output/livesketch.png)
 
-5. Real time facial landmark detection using dlib and opencv
+# 5. Real time facial landmark detection using dlib and opencv
 
     A real-time Facial Landmark Detection system built using Dlib and OpenCV.
    This project detects faces from webcam input and plots 68 facial landmark points (eyes, nose, mouth, jawline, etc.) on the    detected face.
@@ -181,5 +181,106 @@ Install dependencies:
 Output:
 
  ![face_landmark Output](output/facelandmark.png)
+
+
+ # 6. Real-Time Head Pose Estimation using OpenCV & dlib
+
+## Overview
+
+This project implements **real-time head pose estimation** using a webcam.
+It detects a face, extracts facial landmarks, and estimates the head orientation (pose) using the **solvePnP** algorithm from OpenCV.
+
+The output is visualized as a **line projecting from the nose**, indicating the head direction.
+
+---
+
+## Features
+
+   Real-time webcam head pose estimation
+   Facial landmark detection using dlib (68-point model)
+   Pose estimation using OpenCV `solvePnP`
+   Visualization of head direction with nose projection
+   Works for single or multiple faces
+
+---
+
+## Working Pipeline
+
+```
+Webcam Frame
+     ↓
+Face Detection (dlib HOG detector)
+     ↓
+Facial Landmark Detection (68 points)
+     ↓
+Select key landmarks (nose, chin, eyes, mouth)
+     ↓
+solvePnP → Rotation & Translation vectors
+     ↓
+projectPoints → Nose direction
+     ↓
+Display head pose visualization
+```
+
+---
+
+## Requirements
+
+Install dependencies:
+
+```bash
+pip install opencv-python dlib numpy
+```
+
+Download the pretrained landmark model:
+   **shape_predictor_68_face_landmarks.dat**
+
+Place it in the project folder.
+
+---
+
+
+##  Key Concepts Used
+
+### 🔹 Facial Landmark Detection
+
+dlib detects 68 facial keypoints.
+This project uses:
+
+* Nose tip → 30
+* Chin → 8
+* Left eye corner → 36
+* Right eye corner → 45
+* Left mouth → 48
+* Right mouth → 54
+
+---
+
+### 🔹 3D Model Points
+
+Predefined approximate 3D face model used for pose estimation.
+
+---
+
+### 🔹 solvePnP
+
+Computes:
+
+* Rotation vector → Head orientation
+* Translation vector → Face position
+
+---
+
+### 🔹 projectPoints
+
+Projects a 3D point onto the image plane to draw a direction line from the nose.
+
+---
+
+## Output
+
+
+
+
 
 
