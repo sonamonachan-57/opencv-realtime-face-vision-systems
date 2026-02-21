@@ -285,6 +285,7 @@ Projects a 3D point onto the image plane to draw a direction line from the nose.
 
 ## Output
 
+![head pose Output](output/headpose.png)
 
 
 
