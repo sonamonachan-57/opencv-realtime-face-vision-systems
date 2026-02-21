@@ -4,7 +4,7 @@ A simple and efficient real-time face detection system built using MediaPipe and
 This project detects faces from a live webcam feed and displays bounding boxes with confidence scores and FPS
 
 Technologies Used: 
-
+---
      Python 3
 
      OpenCV
@@ -15,13 +15,13 @@ Technologies Used:
 
 
 Face Detection Initialization:
-
+---
      mpFaceDetection = mp.solutions.face_detection
      faceDetection = mpFaceDetection.FaceDetection()
 
 
 How It Works:
-
+---
    Webcam captures real-time video.
 
    Frames are converted from BGR to RGB (required by MediaPipe).
@@ -37,10 +37,10 @@ How It Works:
      FPS is calculated and shown on screen.
 
 Install dependencies:
-             
+ ---            
       pip install opencv-python mediapipe numpy
 
-
+---
 
 # 2. Real Time face blur using opencv:
 
@@ -197,9 +197,13 @@ The output is visualized as a **line projecting from the nose**, indicating the 
 ## Features
 
    Real-time webcam head pose estimation
+   
    Facial landmark detection using dlib (68-point model)
+   
    Pose estimation using OpenCV `solvePnP`
+   
    Visualization of head direction with nose projection
+   
    Works for single or multiple faces
 
 ---
