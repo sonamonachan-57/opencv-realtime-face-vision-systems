@@ -1,4 +1,4 @@
-# 1. Real-Time Face Detection using MediaPipe & OpenCV 
+# 1. Real-Time Face Detection using MediaPipe & Opencv
 
 A simple and efficient real-time face detection system built using MediaPipe and OpenCV.
 This project detects faces from a live webcam feed and displays bounding boxes with confidence scores and FPS
