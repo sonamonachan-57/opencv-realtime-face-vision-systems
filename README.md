@@ -44,7 +44,7 @@ Install dependencies:
 
 # 2. Real Time face blur using opencv:
 
-    This project detects human faces in real-time using OpenCV’s Haar Cascade classifier and applies a Gaussian blur effect to anonymize them.
+This project detects human faces in real-time using OpenCV’s Haar Cascade classifier and applies a Gaussian blur effect to anonymize them.
 
    It captures video from the webcam, detects faces frame-by-frame, and blurs only the detected face regions while keeping the rest of the frame unchanged.
 
