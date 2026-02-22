@@ -107,7 +107,7 @@ How it works:
 
 
 
-
+---
 
 # 4.Real-Time Pencil Sketch Using OpenCV
 
