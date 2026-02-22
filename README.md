@@ -187,6 +187,7 @@ Output:
 ---
  ![face_landmark Output](output/facelandmark.png)
 
+---
 
  # 6. Real-Time Head Pose Estimation using OpenCV & dlib
 
