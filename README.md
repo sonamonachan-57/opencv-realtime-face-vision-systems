@@ -78,7 +78,7 @@ Output:
 ---
 ![Face blur Output](output/faceblur.png)
 
-
+---
 
 # 3. Real time face detection using Opencv's Haarcascade
 
