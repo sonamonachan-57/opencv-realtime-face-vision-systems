@@ -143,6 +143,8 @@ Output
 ---
 ![livesketch Output](output/livesketch.png)
 
+
+---
 # 5. Real time facial landmark detection using dlib and opencv
 
     A real-time Facial Landmark Detection system built using Dlib and OpenCV.
