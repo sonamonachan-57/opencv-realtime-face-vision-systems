@@ -150,6 +150,7 @@ Output
 
 Features:
 ---
+
    Real-time webcam face detection
 
    68 facial landmark detection
