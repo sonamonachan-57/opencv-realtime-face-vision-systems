@@ -147,10 +147,10 @@ This project converts live webcam video into a real-time pencil sketch effect us
 ---
 # 5. 📌 Real time facial landmark detection using dlib and opencv
 
-    A real-time Facial Landmark Detection system built using Dlib and OpenCV.
+   A real-time Facial Landmark Detection system built using Dlib and OpenCV.
    This project detects faces from webcam input and plots 68 facial landmark points (eyes, nose, mouth, jawline, etc.) on the    detected face.
 
-## Features:
+## 🔮 Features:
 
 
    Real-time webcam face detection
@@ -191,7 +191,7 @@ This project uses:
 
  # 6. 📌 Real-Time Head Pose Estimation using OpenCV & dlib
 
-## Overview
+## 📖 Overview
 
 This project implements **real-time head pose estimation** using a webcam.
 It detects a face, extracts facial landmarks, and estimates the head orientation (pose) using the **solvePnP** algorithm from OpenCV.
@@ -200,7 +200,7 @@ The output is visualized as a **line projecting from the nose**, indicating the 
 
 
 
-## Features
+## 🔮 Features
 
    Real-time webcam head pose estimation
    
