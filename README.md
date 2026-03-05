@@ -22,11 +22,11 @@ This project detects faces from a live webcam feed and displays bounding boxes w
 
 ## 🧠 How It Works:
 
-   Webcam captures real-time video.
+   🔹Webcam captures real-time video.
 
-   Frames are converted from BGR to RGB (required by MediaPipe).
+   🔹Frames are converted from BGR to RGB (required by MediaPipe).
 
-   MediaPipe Face Detection model processes the image.
+   🔹MediaPipe Face Detection model processes the image.
 
  ## For each detected face:
  
@@ -60,19 +60,19 @@ This project detects human faces in real-time using OpenCV’s Haar Cascade clas
 ## 🧠 How it works:
 
 
-Capture webcam video using cv2.VideoCapture()
+🔹Capture webcam video using cv2.VideoCapture()
 
-Convert frame to grayscale
+🔹Convert frame to grayscale
 
-Detect faces using detectMultiScale()
+🔹Detect faces using detectMultiScale()
 
-Extract Region of Interest (ROI)
+🔹Extract Region of Interest (ROI)
 
-Apply cv2.GaussianBlur() to the face
+🔹Apply cv2.GaussianBlur() to the face
 
-Replace blurred ROI back into original frame
+🔹Replace blurred ROI back into original frame
 
-Display processed frame
+🔹Display processed frame
 
 ## 📸 Output:
 
@@ -116,11 +116,11 @@ This project converts live webcam video into a real-time pencil sketch effect us
 
 ## It displays:
   
-   Original camera feed
+   🔹Original camera feed
 
-   Pencil sketch version
+   🔹Pencil sketch version
 
-   Both shown side-by-side in one window
+   🔹Both shown side-by-side in one window
 
 ## 🛠️ Technologies used:
       
@@ -130,13 +130,13 @@ This project converts live webcam video into a real-time pencil sketch effect us
 
 ## 🧠 How it works:
 
-  Convert frame to grayscale
+  🔹Convert frame to grayscale
 
-  Invert grayscale image
+  🔹Invert grayscale image
 
-  Apply Gaussian Blur
+  🔹Apply Gaussian Blur
 
-  Blend using Dodge technique
+  🔹Blend using Dodge technique
 
 
 ## 📸 Output
@@ -153,15 +153,15 @@ This project converts live webcam video into a real-time pencil sketch effect us
 ## 🔮 Features:
 
 
-   Real-time webcam face detection
+   🔹Real-time webcam face detection
 
-   68 facial landmark detection
+   🔹68 facial landmark detection
 
-   Landmark visualization with OpenCV
+   🔹Landmark visualization with OpenCV
 
-   Fast and lightweight implementation
+   🔹Fast and lightweight implementation
 
-   Clean and simple code structure
+   🔹Clean and simple code structure
 
 ## 🛠️ Technologies used:
      
@@ -202,15 +202,15 @@ The output is visualized as a **line projecting from the nose**, indicating the 
 
 ## 🔮 Features
 
-   Real-time webcam head pose estimation
+   🔹Real-time webcam head pose estimation
    
-   Facial landmark detection using dlib (68-point model)
+   🔹Facial landmark detection using dlib (68-point model)
    
-   Pose estimation using OpenCV `solvePnP`
+   🔹Pose estimation using OpenCV `solvePnP`
    
-   Visualization of head direction with nose projection
+   🔹Visualization of head direction with nose projection
    
-   Works for single or multiple faces
+   🔹Works for single or multiple faces
 
 
 
@@ -342,19 +342,19 @@ Visual Alert + Voice Warning
 
 ## Process Explanation
 
-The webcam captures real-time video frames.
+🔹The webcam captures real-time video frames.
 
-The system detects faces using dlib’s frontal face detector.
+🔹The system detects faces using dlib’s frontal face detector.
 
-Facial landmarks are extracted using the 68-point landmark predictor.
+🔹Facial landmarks are extracted using the 68-point landmark predictor.
 
-Eye coordinates are identified from the facial landmarks.
+🔹Eye coordinates are identified from the facial landmarks.
 
-The Eye Aspect Ratio (EAR) is calculated using Euclidean distance.
+🔹The Eye Aspect Ratio (EAR) is calculated using Euclidean distance.
 
-If the EAR falls below the threshold (0.25), the system assumes the eyes are closed.
+🔹If the EAR falls below the threshold (0.25), the system assumes the eyes are closed.
 
-A visual warning message and voice alert are triggered.
+🔹A visual warning message and voice alert are triggered.
 
 ## 🛠️ Technologies Used
 
@@ -366,17 +366,17 @@ A visual warning message and voice alert are triggered.
 
 ## ✨ Features:
 
-Real-time face detection
+🔹Real-time face detection
 
-Eye tracking using facial landmarks
+🔹Eye tracking using facial landmarks
 
-Eye Aspect Ratio (EAR) based drowsiness detection
+🔹Eye Aspect Ratio (EAR) based drowsiness detection
 
-Visual alert messages
+🔹Visual alert messages
 
-Audio warning system
+🔹Audio warning system
 
-Works with a standard webcam
+🔹Works with a standard webcam
 
 ## 📦 Installation
 
