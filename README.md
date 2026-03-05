@@ -291,6 +291,141 @@ Projects a 3D point onto the image plane to draw a direction line from the nose.
 
 ![head pose Output](output/headpose.png)
 
+---
+
+# 7. 😴 Driver Drowsiness Detection System
+
+## 📌 Overview
+
+The Driver Drowsiness Detection System is a computer vision–based safety application that monitors a person's eye activity using a webcam to detect signs of drowsiness. When the system detects that the eyes remain closed beyond a defined threshold, it triggers both visual and audio alerts to wake the person.
+
+This system is designed to help reduce accidents caused by driver fatigue by providing real-time monitoring and warning mechanisms.
+
+## 🎯 Objective
+
+The goal of this project is to build a real-time system that:
+
+  Detects a human face using computer vision
+
+  Tracks facial landmarks to locate the eyes
+
+  Calculates the Eye Aspect Ratio (EAR) to determine eye closure
+
+  Triggers alerts when drowsiness is detected
+
+## ⚙️ How It Works: 
+
+```
+Webcam Video Input
+        │
+        ▼
+Face Detection (dlib)
+        │
+        ▼
+Facial Landmark Detection
+        │
+        ▼
+Eye Landmark Extraction
+        │
+        ▼
+Eye Aspect Ratio (EAR) Calculation
+        │
+        ▼
+Check Threshold Value
+        │
+        ▼
+If EAR < Threshold → Drowsiness Detected
+        │
+        ▼
+Visual Alert + Voice Warning
+```
+
+## Process Explanation
+
+The webcam captures real-time video frames.
+
+The system detects faces using dlib’s frontal face detector.
+
+Facial landmarks are extracted using the 68-point landmark predictor.
+
+Eye coordinates are identified from the facial landmarks.
+
+The Eye Aspect Ratio (EAR) is calculated using Euclidean distance.
+
+If the EAR falls below the threshold (0.25), the system assumes the eyes are closed.
+
+A visual warning message and voice alert are triggered.
+
+## 🛠️ Technologies Used
+
+    Python
+    OpenCV – real-time computer vision processing
+    dlib – face detection and facial landmark detection
+    SciPy – Euclidean distance calculations
+    pyttsx3 – text-to-speech alert system
+
+## ✨ Features:
+
+Real-time face detection
+
+Eye tracking using facial landmarks
+
+Eye Aspect Ratio (EAR) based drowsiness detection
+
+Visual alert messages
+
+Audio warning system
+
+Works with a standard webcam
+
+## 📦 Installation
+
+1️⃣ Install Required Libraries
+     
+    pip install opencv-python dlib scipy pyttsx3
+2️⃣ Download Facial Landmark Model
+
+Download the dlib facial landmark predictor file:
+
+    shape_predictor_68_face_landmarks.dat
+
+Place it in the same project directory.
+
+ download it from:
+
+    http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
+
+
+   The webcam will start and the system will monitor eye activity in real time.
+
+## 📸 Example Output
+
+    When drowsiness is detected:
+
+    DROWSINESS DETECTED
+    Alert!!!! WAKE UP DUDE
+
+An audio warning will also be played using text-to-speech.
+
+⚠️ Threshold Value
+
+The system uses an Eye Aspect Ratio threshold of 0.25.
+
+    EAR < 0.25 → Eyes Closed → Drowsiness Alert
+
+This value can be adjusted depending on user behavior and environment.
+
+
+## 🌍 Applications
+
+🚗 Driver safety monitoring systems
+
+🏭 Industrial worker fatigue detection
+
+🎓 Research in human behavior monitoring
+
+🚑 Healthcare fatigue monitoring
+
 
 
 
