@@ -418,13 +418,13 @@ This value can be adjusted depending on user behavior and environment.
 
 ## 🌍 Applications
 
-🚗 Driver safety monitoring systems
+- Driver safety monitoring systems
 
-🏭 Industrial worker fatigue detection
+- Industrial worker fatigue detection
 
-🎓 Research in human behavior monitoring
+- Research in human behavior monitoring
 
-🚑 Healthcare fatigue monitoring
+- Healthcare fatigue monitoring
 
 
 
